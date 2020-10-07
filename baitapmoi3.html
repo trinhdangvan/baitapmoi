@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+    <script src="tien.js"></script>
+
+
+</head>
+<body>
+<style>
+    th,td{
+        width: 100px;
+        height: 40px;
+    }
+</style>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Form Currency</th>
+        <th>To Currency</th>
+        <td></td>
+    <tr>
+        <td><input type="number" id="money"> </td>
+        <td>
+            <select id="in">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+                <option value="106">JPY</option>
+                <option value="1187">KRW</option>
+            </select>
+        </td>
+        <td>
+            <select id="out">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+                <option value="106">JPY</option>
+                <option value="1187">KRW</option>
+            </select>
+        </td>
+        <td><button type="button" onclick="convertMoney()">convert</button></td>
+    </tr>
+</table>
+<p id="kq">xin chao</p>
+</body>
+</html>
