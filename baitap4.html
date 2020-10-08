@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="number" id="o1"> <input type ="number" id="o2"><br>
+<br>
+<button onclick="cong()">cộng</button>
+
+<button onclick="tru()">trừ</button>
+
+<button onclick="nhan()">nhân</button>
+
+<button onclick="chia()">chia</button>
+ <p id="new"></p>
+   <script>
+       function cong (){
+           let a1= parseInt(document.getElementById("o1").value);
+           let b1= parseInt(document.getElementById("o2").value);
+           let str =a1+b1
+           document.getElementById("new").innerHTML ="kq la" + str}
+
+       function tru (){
+           let a1= parseInt(document.getElementById("o1").value);
+           let b1= parseInt(document.getElementById("o2").value);
+           let str =a1-b1
+           document.getElementById("new").innerHTML ="kq la"+ str}
+
+       function nhan (){
+           let a1= parseInt(document.getElementById("o1").value);
+           let b1= parseInt(document.getElementById("o2").value);
+           let str =a1*b1
+           document.getElementById("new").innerHTML ="kq la" + str}
+
+           function chia (){
+           let a1= parseInt(document.getElementById("o1").value);
+           let b1= parseInt(document.getElementById("o2").value);
+           let str =a1/b1
+           document.getElementById("new").innerHTML ="kq la" + str}
+   </script>
+
+</body>
+</html>
